@@ -1,0 +1,1244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+
+.container-termin {
+display: flex;
+}
+
+.item-termin {
+flex: 1;
+align-self: flex-start;
+padding-bottom: 90px;
+}
+
+.item-termin2 {
+flex: 1;
+align-self: flex-end;
+}
+
+
+
+
+
+
+.container-wir {
+  display: flex;
+
+}
+
+.item-wir {
+  flex: 1;
+  align-self: flex-start;
+}
+
+
+
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  max-width: 1280px;
+  background-color: #fff;
+}
+
+.titel-line{
+  font-size: 1.5em;
+  margin-top: 180px;
+  padding-left: 50px;
+  max-width: 310px;
+  font-weight: bold;
+}
+
+.titel-line:after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    display: block;
+    background: #43BFCD;
+    margin-top: -9px;
+}
+
+.titel-line-termin{
+  font-size: 1.5em;
+  margin-top: 120px;
+  padding-left: 40px;
+  max-width: 280px;
+  font-weight: bold;
+
+}
+
+.titel-line-termin:after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    display: block;
+    background: #43BFCD;
+    margin-top: -9px;
+}
+
+.titel-wir{
+  font-size: 3.8em;
+  padding-left: 50px;
+  font-weight: bolder;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.wir{
+  padding-left: 50px;
+  padding-right: 100px;
+  line-height: 1.7em;
+}
+
+
+.aktion-font{
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  padding: 30px 40px 0px 40px;
+  line-height: 1.5em
+}
+
+
+.aktion-font-2{
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  padding: 45px 40px 0px 40px;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  max-width: 1280px;
+  z-index: 3;
+  margin-top: 55px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  color: #222222;
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 0px 10px 50px;
+  border-bottom: 1px solid #222222;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #43BFCD;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  margin-right: 40px;
+}
+
+.gradient{
+  width: 100%;
+  height: 55px;
+  background-image: linear-gradient(to left,#43BFCD, #3A5DCA);
+  position: fixed;
+  z-index: 3;
+}
+
+.gradient-font{
+  color: #fff;
+  padding: 17px 70px 0px 0px;
+  float: right;
+}
+
+.gradient-font a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.gradient-font a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon{
+  height: 50px;
+  width: auto;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.icon-social{
+  height: 45px;
+  width: auto;
+
+}
+
+.icon-instagram{
+  height: 57px;
+  width: auto;
+
+}
+
+.icons{
+  margin-left: 50px;
+  float: left;
+  width: 45%;
+}
+
+.Header-Kontakt{
+  float: right;
+  width: 45%;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 70px 70px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+.carousel{
+  padding-top: 190px;
+  width: 100%;
+}
+
+.carousel-control-prev-icon{
+  background-image: url(../img/pfeil<@2x.png)!important;
+  height: 50px!important;
+  width: 30px!important;
+  margin-top: 80px;
+}
+
+.carousel-control-next-icon{
+  background-image: url(../img/pfeil>@2x.png)!important;
+  height: 50px!important;
+  width: 30px!important;
+  margin-top: 80px;
+}
+
+
+
+.slide{
+  position: relative;
+}
+
+.slide img{
+  display: block;
+}
+
+
+.slide h1 {
+  position: absolute;
+  bottom: 165px;
+  left: 0;
+  padding: 10px 30px 10px 50px;
+  color: #fff;
+  background-color: #222222;
+}
+
+.slide .font-two{
+  bottom: 90px;
+}
+
+.slide-right h1{
+  position: absolute;
+  display: table;
+  text-align: right;
+  right: 0;
+  padding: 10px 50px 10px 30px;
+  left: inherit;
+}
+
+
+
+
+
+#wir{
+  margin-top: 50px;
+  margin-right: 0px;
+}
+
+
+
+.wir-img{
+  height: auto;
+  width: 92%;
+  margin-right: 5px;
+  margin-top: 50px;
+}
+
+#aktionen{
+  margin-top: 50px;
+
+
+}
+
+.box-aktionen{
+  width: 91.8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sommeraktion{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sommeraktion img{
+  width: 100%;
+  hyphens: auto;
+}
+
+.sommer{
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  background-color: #43BFCD;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+}
+
+.sommer-titel{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.sommer-text{
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.balken{
+  height: 25px;
+  background-color: #43BFCD;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+
+.dreieck{
+  width: 0px;
+  height: 0px;
+  -webkit-transform:rotate(360deg);
+  border-style: solid;
+  border-width: 50px 70px 0 70px;
+  border-color: #43bfcd transparent transparent transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.column-aktion {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+.column-aktion-left{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  padding-left: 55px;
+}
+
+.column-aktion-right{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  padding-right: 55px;
+}
+
+
+	.aktionen-box {
+		display: flex;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 40px;
+
+	}
+
+
+	.item {
+		flex: 1;
+		align-self: flex-start;
+		padding: 1em;
+		background-color: white;
+	}
+
+
+
+
+.box{
+  height: 110px;
+  background-color: #43BFCD;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box_mobile{
+  height: 110px;
+  background-color: #43BFCD;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-img-left{
+  background-image: url(../img/rabatte.jpg);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-top: 20px;
+
+}
+
+.column-img{
+  background-image: url(../img/sommerraetsel.jpg);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-bottom: 20px;
+}
+
+.column-img-right{
+  background-image: url(../img/gutschein.jpg);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-top: 20px;
+}
+
+
+.column-img-right2{
+  background-image: url(../img/beraten.jpg);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+.column-img2{
+  background-image: url(../img/sicht.jpg);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-bottom: 20px;
+}
+
+
+.column-img-left2{
+  background-image: url(../img/brillenreparatur.jpg);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+
+#terminvereinbarung{
+  margin-top: 30px;
+}
+
+
+
+.termin-titel{
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+
+.titel-termin{
+  font-size: 3.8em;
+  padding-left: 40px;
+  font-weight: bolder;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.termin-font{
+  font-size: 1em;
+  color: #fff;
+  padding-left: 50px;
+}
+
+
+.background{
+  background-color: #222;
+  height: 840px;
+  width: 470px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.termin-box{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  padding-top: 250px;
+}
+
+
+.termin-font-m{
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+
+
+.form{
+  padding-left: 50px;
+}
+
+
+input{
+  width: 100%;
+  height: 40px;
+}
+
+
+textarea{
+  width: 100%;
+  border: 1px solid #c2c2c2;
+}
+
+.column-form1{
+  float: left;
+  width: 60%;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.column-form2{
+  float: left;
+  width: 40%;
+  padding-bottom: 10px;
+}
+
+
+.row-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.senden{
+  float: right;
+  background-color: #43BFCD;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+.senden:hover{
+  background-color: #222;
+}
+
+
+.form-text{
+  padding-left: 50px;
+}
+
+.impressum{
+  background-color: #e7e7e7;
+  padding-bottom: 80px;
+}
+
+.impressum-titel{
+  padding-top: 50px;
+  padding-left: 60px;
+  font-weight: bold;
+}
+
+
+
+.column-impressum {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row-impressum:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-titel{
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 60px;
+  padding-top: 10px;
+
+}
+
+.text-impressum{
+  padding-left: 60px;
+  line-height: 1.8em;
+}
+
+.text-impressum-row{
+  padding-top: 57px;
+  line-height: 1.8em;
+}
+
+.text-impressum a{
+  text-decoration: none;
+  color: #43BFCD;
+}
+
+.text-impressum a:hover{
+  text-decoration: none;
+  color: #222;
+}
+
+
+.container-impressum {
+		display: flex;
+	}
+
+	.item-impressum {
+		flex: 1;
+		align-self: flex-start;
+	}
+
+@media screen and (min-width: 1100px){
+  .aktionen-box_mobile{
+    display: none!important;
+  }
+  }
+
+@media screen and (max-width: 1100px){
+  .aktionen-box {
+    display: none;
+    }
+
+  }
+
+  .item_mobile {
+    flex: 1;
+    align-self: flex-start;
+    padding: 1em;
+    background-color: white;
+  }
+
+  .aktionen-box_mobile {
+    display: flex;
+    margin-top: 40px;
+
+  }
+
+  .aktion-font_mobile{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 40px 40px 0px 40px;
+    line-height: 1.5em
+  }
+
+
+  .aktion-font-2_mobile{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 45px 40px 0px 40px;
+  }
+
+  .column-img-left_mobile{
+    background-image: url(../img/rabatte_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 540px;
+    margin-top: 20px;
+  }
+
+  .column-img_mobile{
+    background-image: url(../img/sommerraetsel_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 540px;
+    margin-bottom: 20px;
+  }
+
+  .column-img-right_mobile{
+    background-image: url(../img/gutschein_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    margin-top: 20px;
+  }
+
+
+  .column-img-right2_mobile{
+    background-image: url(../img/beraten_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 540px;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+  .column-img2_mobile{
+    background-image: url(../img/sicht_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    margin-bottom: 20px;
+  }
+
+
+  .column-img-left2_mobile{
+    background-image: url(../img/brillenreparatur_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 540px;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+
+}
+
+
+@media (max-width: 1120px) {
+
+  .slide h1 {
+    position: absolute;
+    bottom: 125px;
+    left: 0;
+    padding: 10px 30px 10px 50px;
+    color: #fff;
+    background-color: #222222;
+  }
+
+  .slide .font-two{
+    bottom: 50px;
+  }
+
+  .slide-right h1{
+    position: absolute;
+    display: table;
+    text-align: right;
+    right: 0;
+    left: inherit;
+  }
+
+
+}
+
+
+@media screen and (max-width:1087px){
+.container-termin {
+flex-flow: column wrap;
+}
+
+.item-termin{
+  align-self: auto;
+  margin-right: 70px;
+}
+
+.background{
+  width: auto;
+  margin-left: 50px;
+  height: 540px;
+}
+
+.item-termin2{
+  align-self: auto;
+}
+
+.termin-box{
+  padding-top: 130px;
+  width: 50%;
+}
+
+}
+
+
+@media (max-width: 1005px) {
+
+  .titel-line{
+    margin-top: 120px;
+
+  }
+
+  .wir{
+    padding-left: 50px;
+    padding-right: 30px;
+    line-height: 1.7em;
+  }
+
+
+}
+
+
+@media screen and (max-width:968px){
+  .container-wir {
+    flex-flow: column wrap;
+  }
+
+  .box-aktionen{
+    margin-top: 400px;
+  }
+
+  .item-wir{
+    margin-right: 12%;
+  }
+
+  #wir{
+    margin-top: 10px;
+  }
+}
+
+
+@media (min-width: 1005px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+    border-bottom: none;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  .header ul {
+    padding-top: 40px;
+  }
+
+
+}
+
+@media (max-width: 763px) {
+
+  .slide h1 {
+    position: absolute;
+    bottom: 72px;
+    left: 0;
+    padding: 10px 30px 10px 23px;
+    color: #fff;
+    background-color: #222222;
+    font-size: 1.6em
+  }
+
+  .slide .font-two{
+    bottom: 15px;
+  }
+
+  .slide-right h1{
+    position: absolute;
+    display: table;
+    text-align: right;
+    right: 0;
+    left: inherit;
+  }
+
+  .carousel-control-prev-icon{
+    display: none!important;
+  }
+
+  .carousel-control-next-icon{
+    display: none!important;
+  }
+
+  .container-impressum {
+    flex-flow: column wrap;
+  }
+
+  .text-impressum-row{
+    padding-top: 20px;
+    padding-left: 60px;
+  }
+
+  .box-aktionen{
+    margin-top: 150px;
+  }
+
+  .aktionen-box_mobile {
+      flex-flow: column wrap;
+      }
+
+  .aktionen-box_box{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+    .item_mobile{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .column-img-left_mobile{
+      background-image: url(../img/rabatte_mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: left;
+      height: 540px;
+      margin-top: 20px;
+      width: 459px;
+    }
+
+    .column-img_mobile{
+      background-image: url(../img/sommerraetsel_mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 540px;
+      margin-bottom: 20px;
+      margin-top: 60px;
+      width: 459px;
+    }
+
+    .column-img-right_mobile{
+      background-image: url(../img/gutschein_mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 540px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      width: 459px;
+    }
+
+
+    .column-img-right2_mobile{
+      background-image: url(../img/beraten_mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 540px;
+      margin-top: 20px;
+      margin-left: 2px;
+      width: 459px;
+    }
+
+    .column-img2_mobile{
+      background-image: url(../img/sicht_mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 540px;
+      margin-bottom: 20px;
+      width: 459px;
+    }
+
+
+    .column-img-left2_mobile{
+      background-image: url(../img/brillenreparatur_mobile.jpg);
+      background-repeat: no-repeat;
+      background-position: left;
+      height: 540px;
+      margin-top: 20px;
+      margin-left: 2px;
+      width: 459px;
+    }
+
+}
+
+@media (max-width: 731px) {
+  .sommer{
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: #43BFCD;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42%;
+  }
+
+  .balken{
+    height: 25px;
+    background-color: #43BFCD;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .sommer-titel{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 6%;
+  }
+
+  .sommer-text{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+}
+
+@media (max-width: 719px) {
+
+  .icons{
+    margin-left: 20px;
+    width: 25%;
+  }
+
+  .Header-Kontakt{
+    float: right;
+    width: 55%;
+  }
+
+  .gradient-font{
+    color: #fff;
+    padding: 17px 20px 0px 0px;
+    float: right;
+  }
+
+}
+
+
+@media (max-width: 620px) {
+
+  .icons{
+    margin-left: 20px;
+    width: 35%;
+  }
+
+  .Header-Kontakt{
+    float: right;
+    width: 55%;
+  }
+
+  .gradient-font{
+    color: #fff;
+    padding: 17px 20px 0px 0px;
+    float: right;
+  }
+
+  .column-form1{
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .column-form2{
+    float: none;
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  .termin-box{
+    width: 70%;
+  }
+
+  .box-aktionen{
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .slide h1 {
+    position: absolute;
+    bottom: 62px;
+    left: 0;
+    padding: 10px 30px 10px 23px;
+    color: #fff;
+    background-color: #222222;
+    font-size: 1.1em
+  }
+
+  .slide .font-two{
+    bottom: 15px;
+  }
+
+  .slide-right h1{
+    position: absolute;
+    display: table;
+    text-align: right;
+    right: 0;
+    left: inherit;
+  }
+
+  .dreieck{
+    width: 0px;
+    height: 0px;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 80px 100px 0 100px;
+    border-color: #43bfcd transparent transparent transparent;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .column-img-left_mobile{
+    background-image: url(../img/rabatte_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 540px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .column-img_mobile{
+    background-image: url(../img/sommerraetsel_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 540px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    width: 317px;
+  }
+
+  .column-img-right_mobile{
+    background-image: url(../img/gutschein_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 317px;
+  }
+
+
+  .column-img-right2_mobile{
+    background-image: url(../img/beraten_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 540px;
+    margin-top: 20px;
+    margin-left: 2px;
+    width: 317px;
+  }
+
+  .column-img2_mobile{
+    background-image: url(../img/sicht_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    margin-bottom: 20px;
+    width: 317px;
+  }
+
+
+  .column-img-left2_mobile{
+    background-image: url(../img/brillenreparatur_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 540px;
+    margin-top: 20px;
+    margin-left: 2px;
+    width: 317px;
+  }
+
+
+
+}
